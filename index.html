@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework2</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Navigation Example</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showContent('home')">Home</a></li>
+            <li><a href="#" onclick="showContent('about')">About</a></li>
+            <li><a href="#" onclick="showContent('services')">Services</a></li>
+            <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+        </ul>
+    </nav>
 
+    <div id="content">
+        <h1>Welcome to our Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <img src="home-image.jpg" alt="Home Image">
+    </div>
+
+    <script src="app/app.js"></script>
 </body>
 
 </html>
